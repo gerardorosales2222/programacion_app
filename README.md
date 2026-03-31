@@ -213,15 +213,23 @@ La integración de Material Design en Flutter simplifica el proceso de diseño y
 + Eficiencia en el desarrollo: Proporciona componentes predefinidos que aceleran el proceso de diseño y desarrollo.
 + Experiencia de usuario mejorada: Al seguir las guías de Material Design, se ofrece a los usuarios una experiencia fluida y agradable.
 
-# ¿Cómo crear nuestro Hola Mundo desde cero?
 
-[![Programación de APP 02 - Instalación de Entorno de Trabajo](https://img.youtube.com/vi/YH_yIMZj97o/maxresdefault.jpg)](https://www.youtube.com/watch?v=YH_yIMZj97o)
-*Haz clic en la imagen para ver el tutorial de instalación de Flutter y VS Code.*
+# ¿Cómo instalar nuestro entorno de trabajo?
 
-## Hola mundo
+<a href="https://www.youtube.com/watch?v=YH_yIMZj97o" target="_blank">
+  <img src="https://img.youtube.com/vi/YH_yIMZj97o/maxresdefault.jpg" alt="Programación de APP 02 - Instalación de Entorno de Trabajo">
+</a>
 
-[![Programación de APP 03 - Primeros pasos en Flutter](https://img.youtube.com/vi/UEUViiWIHaE/maxresdefault.jpg)](https://www.youtube.com/watch?v=UEUViiWIHaE)
-*Haz clic para ver cómo crear tu primer proyecto, entender los Widgets (Stateless vs Stateful) y usar Hot Reload.*
+*Clic en la imagen para ver el tutorial de instalación de Flutter.*
+
+# Hola mundo
+
+<a href="https://www.youtube.com/watch?v=UEUViiWIHaE" target="_blank">
+  <img src="https://img.youtube.com/vi/UEUViiWIHaE/maxresdefault.jpg" alt="Programación de APP 03 - Primeros pasos en Flutter">
+</a>
+
+*Clic para ver cómo crear tu primer proyecto, entender los Widgets (Stateless vs Stateful) y usar Hot Reload.*
+
 
 # Maquetación
 
