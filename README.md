@@ -39,6 +39,8 @@ Tiene un buen manejo de los Widgets, que son los elementos que se usan en flutte
 
 En Flutter, un widget es el bloque básico de construcción de la interfaz de usuario. Todo en Flutter, desde botones y textos hasta diseños más complejos, son widgets. Pensemos en ellos como "piezas de Lego" que se pueden juntar para crear una aplicación.
 
+>Un Widget es la unidad básica y fundamental de construcción en la interfaz de usuario de Flutter, funcionando como una descripción inmutable de una parte de la pantalla, ya sea un elemento estructural, un componente estilístico o un controlador de interactividad. En este ecosistema, todo es un widget, y estos se organizan en una estructura de árbol mediante una jerarquía de "padres" e "hijos" que determina cómo se renderizan, se posicionan y se comportan los elementos visuales en la pantalla del dispositivo.
+
 Un widget común es `Text`, que simplemente muestra texto en la pantalla. Por ejemplo:
 
 ```dart
