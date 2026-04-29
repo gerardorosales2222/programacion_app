@@ -22,6 +22,7 @@ El término APP (abreviatura de application) define a un tipo de software diseñ
 En el desarrollo de aplicaciones, dividimos el trabajo en dos capas fundamentales que funcionan en conjunto:
 
 **Frontend (El lado del cliente):** Es todo lo que el usuario ve y con lo que interactúa directamente. Incluye el diseño visual, los botones, las animaciones y la lógica de presentación[^1]. Su objetivo es ofrecer una experiencia intuitiva y atractiva.
+
 **Backend (El lado del servidor):** Es la "arquitectura invisible" que ocurre detrás de escena. Se encarga de procesar los datos, gestionar la seguridad, comunicarse con bases de datos y ejecutar la lógica de negocio compleja.
 
 ### ¿Cómo se comunican habitualmente?
@@ -94,7 +95,7 @@ La herramienta no tiene criterio para saber cuál código es mejor o cuál debe 
 ## 7. ¿Qué es la Programación Orientada a Objetos (POO)? Defina brevemente los conceptos de Clase, Objeto y Herencia.
 La Programación Orientada a Objetos (POO) es un paradigma de programación que organiza el código basándose en "objetos" de la vida real, en lugar de solo en funciones y lógica. Su objetivo es hacer que el software sea más ordenado, reutilizable y fácil de mantener.
 
-**Clase:** Es el molde o plano. Define las características (atributos) y acciones (métodos) que tendrán los objetos. Por ejemplo, la clase Auto.
+**Clase:** Es el molde o plano. Puede ser vista como un tipo de datos definido por el usuario. Define las características (atributos) y acciones (métodos) que tendrán los objetos. Por ejemplo, la clase Auto.
 
 **Objeto:** Es la instancia real creada a partir del molde. Es el auto físico con un color y modelo específicos (ej. "Fiat Cronos blanco").
 
