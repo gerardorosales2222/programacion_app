@@ -27,3 +27,133 @@ Defensa individual **línea por línea** del código. Deben saber explicar:
 * El ciclo de vida de un `StatelessWidget` y el método `build`.
 * Qué es y para qué sirve el `BuildContext`.
 * La diferencia entre `ElevatedButton` y `GestureDetector`.
+
+## Resolución de trabajo.
+
+### clase main.
+
+```dart
+import 'package:detector_button/elevated_button.dart';
+import 'package:detector_button/gesture_detector.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: index(),
+    );
+  }
+}
+
+class index extends StatefulWidget {
+  const index({super.key});
+
+  @override
+  State<index> createState() => _indexState();
+}
+
+class _indexState extends State<index> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+      backgroundColor: Colors.amberAccent,
+      title: Center(
+        child: Text(
+          "DETECTOR VS BUTTON",
+          style: TextStyle(color: Colors.deepOrange),
+        ),
+      ),
+      ),
+      body: Container(
+        margin: EdgeInsets.only(top: 10),
+        child: Row( mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          boton(),
+          boton2(),
+        ],
+      ),
+      )
+      );
+  }
+}
+
+```
+### Clase elevated_button
+```dart
+import 'package:detector_button/gesture_detector.dart';
+import 'package:flutter/material.dart';
+
+class boton2 extends StatefulWidget {
+  const boton2({super.key});
+
+  @override
+  State<boton2> createState() => _boton2State();
+}
+
+class _boton2State extends State<boton2> {
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: (){
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Boton tocado!"))
+        );
+      },
+      child: Container(
+        width: 150,
+        height: 50,
+        color: Colors.red,
+        alignment: Alignment.center,
+        child: Text(
+          'tocá aqui',
+          style:  TextStyle(color: Colors.amberAccent, fontSize: 18)
+          
+        ),
+      ),
+    );
+  }
+}
+```
+### Clase elevated_button
+```dart
+import 'package:flutter/material.dart';
+
+class boton extends StatefulWidget {
+  const boton({super.key});
+
+  @override
+  State<boton> createState() => _botonState();
+}
+
+class _botonState extends State<boton> {
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('container tocado!'))
+        );
+      },
+      child: Container(
+        width: 150,
+        height: 50,
+        color: Colors.blue,
+        alignment: Alignment.center,
+        child: Text(
+          'tocá aqui',
+          style:  TextStyle(color: Colors.amberAccent, fontSize: 18),
+        ),
+      ),
+    );
+  }
+}
+
+```
