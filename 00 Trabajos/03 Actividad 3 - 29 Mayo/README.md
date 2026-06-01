@@ -1,29 +1,101 @@
-![Static Badge](https://img.shields.io/badge/Prog._de_APP_para_Dispositivos_M%C3%B3viles-Actividad_3-brightgreen)
+# gestor_basico
+ A new Flutter project.<br>
+**import 'package:flutter/material.dart';**<br>
+**import 'package:gestor_basico/ElevatedButton.dart';**<br>
+**import 'package:gestor_basico/GestureDetector.dart';**
 
-# Botones 📱
-**Fecha de entrega y defensa oral grupal:** Lunes 1 de Junio
+## void main() {
+  runApp(const MainApp());
+}
 
->Realizar la entrega mediante un Pull Request
+**class MainApp extends StatelessWidget {**
+  const MainApp({super.key});
 
-# Desafío Flutter: Stateless Widgets e Interacción 📱
+  **@override**
+ ## Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: "ejemplo",
+        home: Index(),
+   );
+  }
+}
+## class Index extends StatelessWidget {
+  const Index({super.key});<br>
+   **@override**
+  ## Widget build(BuildContext context) {
+    return Scaffold(
+    **appBar**:AppBar(
+      backgrou
+      **Color**: Colors.grey,
+      **title**: const Text("GestureDetector vs. ElevatedButton"), 
+     );
+      **body**: const Padding( 
+        **padding**: EdgeInsets.all(16.0)),
+          **child**: Row(
+            **mainAxisAlignment**: MainAxisAlignment.center,
+            **children**: [
+              Expanded(child: GestureDetector()),
+              SizedBox(height: 20),
+              Expanded(child: ElevatedButton()),
+            ],
+          )
+        );
+  }
+}
+# GestorDetector
+**import 'package:flutter/material.dart';**
+**import 'package:flutter/rendering.dart';**<br>
+## class ejemplo_gesture extends StatefulWidget {
+  const ejemplo_gesture({super.key});
 
-## Objetivo
-Desarrollar una app de pantalla única en Flutter usando **Stateless Widgets** y dos formas de capturar clics.
+  **@override**<br>
+  State<ejemplo_gesture> createState() => _ejemplo_gestureState();
+}
 
-## Requisitos Técnicos
-1. **Estructura:** Todo el código debe estar dentro de un `StatelessWidget`.
-2. **Botón 1:** Un `ElevatedButton` estándar.
-3. **Botón 2:** Un `GestureDetector` que envuelva a un `Container` personalizado.
-4. **Acción:** Al presionar cada botón, debe mostrarse un mensaje (`print` o `SnackBar`) indicando cuál se tocó.
-5. **Código:** Uso correcto de `const` y formato limpio y modular.
+## class _ejemplo_gestureState extends State<ejemplo_gesture> {
+  **@override**<br>
+  Widget build(BuildContext context) {<br>
+    return GestureDetector(<br>
+      **onTap**: () {<br>
+        ScaffoldMessenger.of(context).showSnackBar(<br>
+          const SnackBar(content: Text('Container tocado')),<br>
+        );<br>
+      },<br>
+      **child**: Container(<br>
+      **width**: 150,<br>
+      **height**: 50,<br>
+      **color**: Color.fromARGB(0, 214, 66, 66),<br>
+      **child**: Row(<br>
+          **mainAxisSize**: MainAxisSize.min,<br>
+         **children**: [<br>
+            Image.asset('asset/mi_icono.pnd', width: 24,<br> **height**: 24),<br>
+            **const** SizedBox(width: 10),<br>
+            **const** Text('toque con imagen', style: **TextStyle<(color: Colors.white)),)**
+          ],<br>
+        ),<br>
+      ),<br>
+    );<br>
+  }<br>
+} <br>
 
-## Entrega (Requisito Excluyente)
-1. Subir el código a GitHub en una rama secundaria.
-2. Crear un **Pull Request (PR)** hacia mi rama principal (`main`/`master`).
-3. **Plazo:** El PR debe estar creado antes del lunes.
+# ElevatedButton
+**import 'package:flutter/material.dart';**
 
-## Evaluación Oral (El Lunes)
-Defensa individual **línea por línea** del código. Deben saber explicar:
-* El ciclo de vida de un `StatelessWidget` y el método `build`.
-* Qué es y para qué sirve el `BuildContext`.
-* La diferencia entre `ElevatedButton` y `GestureDetector`.
+## class elevated_ejemplo extends StatefulWidget {
+  const elevated_ejemplo({super.key});
+
+  **@override>**<br>
+  State<elevated_ejemplo> createState() => _elevated_ejemploState();
+}
+
+## class _elevated_ejemploState extends State<elevated_ejemplo> {<br>
+  **@override**<br>
+  **Widget build(BuildContext context)** {
+    return ElevatedButton(<br>
+      **onPressed**: (){ScaffoldMessenger.of(context).showSnackBar(<br>
+        const SnackBar(content: Text('Botón Presionado'))<br>
+      );},<br>
+      **child**: Text("Botón"));
+  }
+}
+
