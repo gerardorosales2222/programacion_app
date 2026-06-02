@@ -84,7 +84,7 @@ class _indexState extends State<index> {
 }
 ´´´
 
-   # Class ElevatedButton
+# Class ElevatedButton
 
 ``` dart
 import 'package:flutter/material.dart';
